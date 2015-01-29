@@ -7,7 +7,7 @@
             tmpLink.href = this.href;
             
             // check if anchor host matches top window host
-            var externalLink = (tmpLink.host !== top.location.host);
+            var externalLink = (tmpLink.hostname !== top.location.hostname);
             
             // if this is an external link, show confirmation dialog
             if (externalLink) {
